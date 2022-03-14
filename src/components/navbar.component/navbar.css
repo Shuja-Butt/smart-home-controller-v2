@@ -1,0 +1,25 @@
+.navbar-container{
+    /* background-color:rgba(250, 15, 117); */
+    display:flex;
+    justify-content:space-around;
+    font-size:1.5rem;
+    padding:.4rem 0;
+    /* background-color:#21587e; */
+    background-color: #0c2130;
+    color:hsl(180deg, 80%, 50%); 
+    text-transform: uppercase;
+}
+
+.logo{
+    width: 4.5rem;
+}
+.navbar-logo-container{
+    flex-basis: 60%;
+}
+.navbar-links-container{
+    display:flex;
+    align-items: center;
+    gap:30px;
+
+}
+

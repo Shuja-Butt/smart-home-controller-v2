@@ -1,0 +1,32 @@
+.device-registartion-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.device-registartion{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    color: hsl(180deg, 80%, 50%);
+    text-transform: uppercase;
+    padding: 2rem;
+    background: black;
+    width:80%;
+
+}
+.device-registartion-title-container{
+    flex-grow: 1;
+
+}
+
+.device-registartion-actions-container{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-grow: 2;
+}
+

@@ -1,0 +1,65 @@
+.device-category-container{
+    display:flex;
+    flex-direction: column;
+    height:25rem;
+    min-width: 30%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.device-category-container:hover .device-category-backgroud-image-container {
+
+  transform:scale(1.2);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  cursor: pointer;
+  opacity: 0.9;
+
+} 
+
+
+
+
+
+
+.device-category-backgroud-image-container{
+    background-size: cover;
+    background-position:center;
+    height:100%;
+    width:100%;
+
+
+}
+
+
+/* .device-category-backgroud-image-container:hover{
+            
+  transform:scale(1.2);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  cursor: pointer;
+  opacity: 0.9;
+
+
+}
+ */
+
+
+
+
+
+.device-category-tag-container{
+    position:absolute;
+    text-transform: uppercase;
+    color: hsl(180deg, 80%, 50%);
+    font-size: 1.3rem;
+    background: #0a1218;
+    padding: 2rem;
+    border-radius: 8px;
+    opacity:0.7;
+}
+
+.device-category-container:hover .device-category-tag-container {
+
+    opacity: initial;
+  
+  } 

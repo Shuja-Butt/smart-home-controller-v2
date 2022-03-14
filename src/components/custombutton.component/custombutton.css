@@ -1,0 +1,36 @@
+
+.default-buttons-style{
+    outline:none;
+    padding: 1rem 2rem;
+    border:none;
+    cursor:pointer;
+    color:white;
+    border-radius:8px;
+}
+
+
+.sigin-button{
+
+    background:green;
+
+
+}
+.signout-button{
+    background:orange;
+
+
+}
+.remove-button{
+
+    background:#cb0054;
+
+}
+.configure-button{
+    background:hsl(180deg,69%, 47%);
+
+
+}
+
+.add-device-button{
+    background:green;
+}

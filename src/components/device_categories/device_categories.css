@@ -1,0 +1,22 @@
+/* .homeregistration-container{
+    background: #0a1218;
+
+
+} */
+
+.homeregistration-heading-container{
+    text-align: center;
+    padding: 4rem;
+    color: hsl(180deg, 80%, 50%);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.device-categories-container{
+
+    display:flex;
+    justify-content:center;
+    gap:2rem;
+
+
+}

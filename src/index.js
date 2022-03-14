@@ -2,13 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import {msalConfig} from './authConfig';
+import {MsalProvider} from '@azure/msal-react';
+import {PublicClientApplication } from '@azure/msal-browser';
+import {BrowserRouter as Router} from 'react-router-dom';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
+
+//instantiate the msal instance by passing it the msal config object
+const msalInstance = new PublicClientApplication(msalConfig)
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+// All components that require authenticaton are wrapped in MsalProvider
+// All components underneath MsalProvider will have access to the 
+// PublicClientApplication instance via context as well as all hooks 
+// and components provided by @azure/msal-react.
+  
+    <MsalProvider  instance={msalInstance}>
+      <Router>
+        <App />
+      </Router>
+    </MsalProvider>
+,
   document.getElementById('root')
 );
 

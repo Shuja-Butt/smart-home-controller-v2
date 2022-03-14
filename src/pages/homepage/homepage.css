@@ -1,0 +1,17 @@
+.homepage-container{
+    /* background:hsl(180deg, 80%, 50%); */
+    /* background:#21587e; */
+    /* background-color: #90ceff; */
+    /* background: #6fc3ff; */
+    /* background: #0a1218; */
+    /* height:100vh; */
+    /* margin:0; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-transform: uppercase;
+}
+.buttons-container{
+    display:flex;
+    justify-content:space-around;
+}
